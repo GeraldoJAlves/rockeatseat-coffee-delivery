@@ -17,4 +17,24 @@ export const defaultTheme = {
 
   background: '#FAFAFA',
   white: '#FFF',
+
+  title: {
+    XL: '3rem',
+    L: '2rem',
+    M: '1.5rem',
+    S: '1.25rem',
+    XS: '1.125rem',
+    lineHeight: 1.3,
+  },
+
+  text: {
+    L: '1.25rem',
+    M: '1rem',
+    S: '.875rem',
+    XS: '.75rem',
+    lineHeight: 1.3,
+    tag: '.625rem',
+    buttonG: '.875rem',
+    buttonM: '.75rem',
+  },
 }
