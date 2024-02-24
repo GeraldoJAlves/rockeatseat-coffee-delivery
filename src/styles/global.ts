@@ -10,8 +10,8 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 body {
-  background: #333;
-  color: #FFF;
+  background: ${(props) => props.theme.background};
+  color: ${(props) => props.theme.baseText};
 }
 
 :focus {
