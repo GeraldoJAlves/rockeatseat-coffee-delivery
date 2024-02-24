@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export const HeaderContainer = styled.header`
   width: 100%;
   display: flex;
-  padding: 2rem 10rem;
+  padding: 2rem 0;
   justify-content: space-between;
 `
 
