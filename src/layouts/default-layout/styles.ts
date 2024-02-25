@@ -6,5 +6,13 @@ export const LayoutContainer = styled.div`
   & > * {
     padding-left: 10rem;
     padding-right: 10rem;
+    min-width: 880px;
+  }
+
+  @media screen and (max-width: 880px) {
+    & > * {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
   }
 `

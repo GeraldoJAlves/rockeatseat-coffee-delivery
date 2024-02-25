@@ -54,17 +54,32 @@ export function Checkout() {
             </div>
           </CardTitle>
           <PaymentMethods>
-            <input type="radio" name="payment_method" id="credit_card" />
+            <input
+              type="radio"
+              name="payment_method"
+              id="credit_card"
+              value="credit_card"
+            />
             <label htmlFor="credit_card">
               <CreditCard size={16} />
               Cartão de Crédito
             </label>
-            <input type="radio" name="payment_method" id="debit_card" />
+            <input
+              type="radio"
+              name="payment_method"
+              id="debit_card"
+              value="debit_card"
+            />
             <label htmlFor="debit_card">
               <Money size={16} />
               Cartão de Debito
             </label>
-            <input type="radio" name="payment_method" id="money" />
+            <input
+              type="radio"
+              name="payment_method"
+              id="money"
+              value="money"
+            />
             <label htmlFor="money">
               <Bank size={16} />
               Dinheiro

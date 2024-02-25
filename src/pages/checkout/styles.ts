@@ -3,7 +3,16 @@ import styled from 'styled-components'
 
 export const CheckoutContainer = styled.form`
   display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
+
+  & > div {
+    flex: 1;
+
+    &:first-child {
+      flex: 2;
+    }
+  }
 `
 
 export const FormCard = styled.div`
@@ -26,6 +35,7 @@ export const FormCard = styled.div`
     background: ${(props) => props.theme.baseCard};
     padding: 2.5rem;
     gap: 1rem;
+    min-width: 636px;
   }
 
   & > main {
@@ -96,11 +106,11 @@ export const AddresesFields = styled.div`
       width: calc(100% - 200px - 1rem);
     }
 
-    &[name='city'] {
+    &[name='neighborhood'] {
       width: 200px;
     }
 
-    &[name='neighborhood'] {
+    &[name='city'] {
       width: calc(100% - 260px - 2rem);
     }
 

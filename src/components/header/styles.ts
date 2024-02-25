@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
   position: fixed;
+  z-index: 100;
   top: 0;
   width: 100%;
   padding-top: 2rem;
@@ -21,7 +22,7 @@ export const Nav = styled.nav`
 
 export const LogoLink = styled(Link)``
 
-export const LocationButton = styled.button`
+export const Location = styled.span`
   margin-left: auto;
   display: flex;
   align-items: center;

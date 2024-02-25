@@ -1,7 +1,7 @@
 import {
   CheckoutLink,
   HeaderContainer,
-  LocationButton,
+  Location,
   LogoLink,
   MapPinIcon,
   Nav,
@@ -16,10 +16,10 @@ export function Header() {
         <LogoLink to={'/'}>
           <img src={logo} alt="" />
         </LogoLink>
-        <LocationButton>
+        <Location>
           <MapPinIcon weight="fill" />
           Porto Alegre, RS
-        </LocationButton>
+        </Location>
 
         <CheckoutLink to={'/checkout'}>
           <span>3</span>
