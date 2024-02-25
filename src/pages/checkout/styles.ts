@@ -295,6 +295,7 @@ export const ConfirmButton = styled.button`
   border-radius: 6px;
 
   font-size: ${(props) => props.theme.text.buttonG};
+  line-height: 1.6;
   color: ${(props) => props.theme.white};
   font-weight: 700;
   background-color: ${(props) => props.theme.yellow};
