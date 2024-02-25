@@ -1,23 +1,30 @@
-import { HeaderContainer, MapPinIcon, Nav, ShoppingCartIcon } from './styles'
+import {
+  CheckoutLink,
+  HeaderContainer,
+  LocationButton,
+  LogoLink,
+  MapPinIcon,
+  Nav,
+  ShoppingCartIcon,
+} from './styles'
 import logo from '../../assets/logo.svg'
-import { Link } from 'react-router-dom'
 
 export function Header() {
   return (
     <HeaderContainer>
-      <Link to={'/'}>
-        <img src={logo} alt="" />
-      </Link>
       <Nav>
-        <button>
+        <LogoLink to={'/'}>
+          <img src={logo} alt="" />
+        </LogoLink>
+        <LocationButton>
           <MapPinIcon weight="fill" />
           Porto Alegre, RS
-        </button>
+        </LocationButton>
 
-        <Link to={'/checkout'}>
+        <CheckoutLink to={'/checkout'}>
           <span>3</span>
           <ShoppingCartIcon weight="fill" />
-        </Link>
+        </CheckoutLink>
       </Nav>
     </HeaderContainer>
   )

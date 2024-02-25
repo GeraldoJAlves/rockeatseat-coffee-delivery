@@ -3,13 +3,15 @@ import {
   CoffeeCard,
   CoffeeInfo,
   CoffeeList,
+  PriceContainer,
   ProductContainer,
-  QuantityItems,
+  RemoveButton,
   Tags,
 } from './styles'
 
 import withMilk from '../../assets/coffees/with-milk.png'
-import { Minus, Plus, ShoppingCart } from '@phosphor-icons/react'
+import { ShoppingCart } from '@phosphor-icons/react'
+import { QuantityEntry } from '../quantity-entry'
 
 export function Products() {
   return (
@@ -32,22 +34,14 @@ export function Products() {
                 </span>
               </CoffeeInfo>
               <CoffeeActions>
-                <div>
+                <PriceContainer>
                   <span>{'R$ '}</span>
-                  <strong>9,90</strong>
-                </div>
-                <QuantityItems>
-                  <button>
-                    <Plus size={14} weight="bold" />
-                  </button>
-                  <span>1</span>
-                  <button>
-                    <Minus size={14} weight="bold" />
-                  </button>
-                </QuantityItems>
-                <button>
+                  <strong>19,90</strong>
+                </PriceContainer>
+                <QuantityEntry />
+                <RemoveButton>
                   <ShoppingCart width={22} weight="fill" />
-                </button>
+                </RemoveButton>
               </CoffeeActions>
             </CoffeeCard>
           ))}

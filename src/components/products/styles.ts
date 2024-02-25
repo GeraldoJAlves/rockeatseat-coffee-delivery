@@ -79,83 +79,45 @@ export const Tags = styled.ul`
 
 export const CoffeeActions = styled.div`
   display: flex;
-  align-items: end;
+  align-items: center;
   gap: 0.5rem;
   margin-top: 33px;
+`
 
-  & > div {
-    & > span {
-      font-size: ${(props) => props.theme.text.S};
-      line-height: ${(props) => props.theme.text.lineHeight};
-      color: ${(props) => props.theme.baseText};
-      vertical-align: middle;
-    }
-
-    & > strong {
-      font-family: 'Baloo 2', sans-serif;
-      font-size: ${(props) => props.theme.title.M};
-      font-weight: 700;
-      line-height: ${(props) => props.theme.title.lineHeight};
-      color: ${(props) => props.theme.baseText};
-      vertical-align: middle;
-    }
+export const PriceContainer = styled.div`
+  flex: 1;
+  & > span {
+    font-size: ${(props) => props.theme.text.S};
+    line-height: ${(props) => props.theme.text.lineHeight};
+    color: ${(props) => props.theme.baseText};
+    vertical-align: middle;
   }
 
-  & > button {
-    border: none;
-    border-radius: 6px;
-    background: ${(props) => props.theme.purpleDark};
-    padding: 0.5rem;
-    cursor: pointer;
-
-    & > svg {
-      fill: ${(props) => props.theme.baseCard};
-      width: 1.375rem;
-      height: 1.375rem;
-    }
-
-    &:not(:disabled):hover {
-      transition: 0.2s background ease-out;
-      background: ${(props) => props.theme.purple};
-    }
+  & > strong {
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 700;
+    font-size: ${(props) => props.theme.title.M};
+    line-height: ${(props) => props.theme.title.lineHeight};
+    color: ${(props) => props.theme.baseText};
+    vertical-align: middle;
   }
 `
 
-export const QuantityItems = styled.div`
-  display: flex;
-  height: 100%;
-  align-items: center;
-  background-color: ${(props) => props.theme.baseButton};
-  margin-left: auto;
+export const RemoveButton = styled.button`
+  border: none;
   border-radius: 6px;
-  padding: 0 0.5rem;
+  background: ${(props) => props.theme.purpleDark};
+  padding: 0.5rem;
+  cursor: pointer;
 
-  & > button {
-    border: none;
-    background: transparent;
-    line-height: 0;
-    cursor: pointer;
-
-    & > svg {
-      fill: ${(props) => props.theme.purple};
-    }
-
-    &:not(:disabled):hover > svg {
-      transition: 0.2s fill ease-out;
-      fill: ${(props) => props.theme.purpleDark};
-    }
+  & > svg {
+    fill: ${(props) => props.theme.baseCard};
+    width: 1.375rem;
+    height: 1.375rem;
   }
 
-  & > span {
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    border: 0;
-    padding: 0 0.5rem;
-    margin-left: auto;
-    max-width: 2.5rem;
-    font-size: ${(props) => props.theme.text.M};
-    line-height: ${(props) => props.theme.text.lineHeight};
-    color: ${(props) => props.theme.baseTitle};
+  &:not(:disabled):hover {
+    transition: 0.2s background ease-out;
+    background: ${(props) => props.theme.purple};
   }
 `
