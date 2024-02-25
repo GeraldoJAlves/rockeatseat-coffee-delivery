@@ -21,4 +21,21 @@ body {
 :focus {
   outline: 0;
 }
+
+::-webkit-scrollbar-track
+{
+  opacity: 0;
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+
+  background: ${(props) => props.theme.yellowDark}40;
+}
 `
