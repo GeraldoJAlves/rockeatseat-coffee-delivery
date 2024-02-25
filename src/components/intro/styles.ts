@@ -12,7 +12,7 @@ export const IntroContainer = styled.div`
   background-size: 100%;
   padding-top: 5.75rem;
   padding-bottom: 5.75rem;
-  box-shadow: inset 0 0 16px 16px ${(props) => props.theme.background};
+  /* box-shadow: inset 0 0 16px 16px ${(props) => props.theme.background}; */
 `
 export const InfoContainer = styled.div`
   display: flex;
@@ -70,4 +70,8 @@ export const CoffeeIcon = styled(Coffee)`
   background-color: ${(props) => props.theme.purple};
 `
 
-export const Illustration = styled.img``
+export const Illustration = styled.img`
+  object-fit: cover;
+  width: 476px;
+  max-height: 360px;
+`

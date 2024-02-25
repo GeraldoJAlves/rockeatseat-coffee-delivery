@@ -22,6 +22,7 @@ body {
   outline: 0;
 }
 
+/* Custom scroll bar*/
 ::-webkit-scrollbar-track
 {
   opacity: 0;
@@ -36,6 +37,19 @@ body {
 {
 	border-radius: 10px;
 
-  background: ${(props) => props.theme.yellowDark}40;
+  background: ${(props) => props.theme.yellowDark}2F;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 `

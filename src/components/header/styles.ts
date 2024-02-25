@@ -2,10 +2,14 @@ import { MapPin, ShoppingCart } from '@phosphor-icons/react'
 import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
+  position: fixed;
+  top: 0;
   width: 100%;
   display: flex;
-  padding: 2rem 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   justify-content: space-between;
+  background-color: ${(props) => props.theme.background};
 `
 
 export const Nav = styled.nav`
@@ -20,7 +24,7 @@ export const Nav = styled.nav`
     font-size: ${(props) => props.theme.text.S};
     line-height: ${(props) => props.theme.text.lineHeight};
     gap: 0.25rem;
-    padding: 0.625rem 0.5rem;
+    padding: 0.5rem 0.5rem;
     border-radius: 6px;
     border: 0;
     background: ${(props) => props.theme.purpleLight};
