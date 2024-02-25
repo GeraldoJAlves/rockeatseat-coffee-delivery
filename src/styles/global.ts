@@ -14,6 +14,8 @@ body {
 
   line-height: ${(props) => props.theme.text.lineHeight};
   font-size: ${(props) => props.theme.text.M};
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 :focus {

@@ -1,12 +1,18 @@
 import styled from 'styled-components'
-
 import { Coffee, Package, ShoppingCart, Timer } from '@phosphor-icons/react'
+
+import background from '../../assets/background.svg'
 
 export const IntroContainer = styled.div`
   display: flex;
   justify-content: space-between;
   gap: 3.5rem;
-  padding: 5.75rem 0;
+  background: url(${background}) no-repeat;
+  background-position: center;
+  background-size: 100%;
+  padding-top: 5.75rem;
+  padding-bottom: 5.75rem;
+  box-shadow: inset 0px 0px 10px 10px ${(props) => props.theme.background};
 `
 export const InfoContainer = styled.div`
   display: flex;

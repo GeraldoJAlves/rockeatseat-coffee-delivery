@@ -17,6 +17,8 @@ export const Nav = styled.nav`
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: ${(props) => props.theme.text.S};
+    line-height: ${(props) => props.theme.text.lineHeight};
     gap: 0.25rem;
     padding: 0.625rem 0.5rem;
     border-radius: 6px;
@@ -43,22 +45,24 @@ export const Nav = styled.nav`
       border-radius: 1rem;
       width: 1.25rem;
       font-weight: 700;
-      font-size: 0.875rem;
+      font-size: ${(props) => props.theme.text.S};
       box-sizing: inherit;
       text-align: center;
-      line-height: 1.3;
+      line-height: ${(props) => props.theme.text.lineHeight};
     }
   }
 `
 
 export const MapPinIcon = styled(MapPin)`
   fill: ${(props) => props.theme.purple};
-  width: 22px;
-  height: 22px;
+  width: 1.375rem;
+  height: 1.375rem;
+  line-height: ${(props) => props.theme.text.lineHeight};
 `
 
 export const ShoppingCartIcon = styled(ShoppingCart)`
   fill: ${(props) => props.theme.yellowDark};
-  width: 22px;
-  height: 22px;
+  width: 1.375rem;
+  height: 1.375rem;
+  line-height: ${(props) => props.theme.text.lineHeight};
 `
