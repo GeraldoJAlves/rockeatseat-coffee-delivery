@@ -12,7 +12,7 @@ export const IntroContainer = styled.div`
   background-size: 100%;
   padding-top: 5.75rem;
   padding-bottom: 5.75rem;
-  box-shadow: inset 0px 0px 10px 10px ${(props) => props.theme.background};
+  box-shadow: inset 0 0 16px 16px ${(props) => props.theme.background};
 `
 export const InfoContainer = styled.div`
   display: flex;
