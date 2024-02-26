@@ -96,7 +96,11 @@ export function Checkout() {
               <div>
                 <ItemTitle>Latte</ItemTitle>
                 <OrderItemActions>
-                  <QuantityEntry />
+                  <QuantityEntry
+                    currentValue={1}
+                    increaseAction={() => {}}
+                    decreaseAction={() => {}}
+                  />
                   <RemoveButton>
                     <Trash size={16} />
                     Remover
@@ -112,7 +116,11 @@ export function Checkout() {
               <div>
                 <ItemTitle>Expresso Tradicional</ItemTitle>
                 <OrderItemActions>
-                  <QuantityEntry />
+                  <QuantityEntry
+                    currentValue={1}
+                    increaseAction={() => {}}
+                    decreaseAction={() => {}}
+                  />
                   <RemoveButton>
                     <Trash size={16} />
                     Remover

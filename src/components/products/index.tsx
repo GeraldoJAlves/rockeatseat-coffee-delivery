@@ -1,3 +1,4 @@
+import { ShoppingCart } from '@phosphor-icons/react'
 import {
   CoffeeActions,
   CoffeeCard,
@@ -10,7 +11,6 @@ import {
 } from './styles'
 
 import withMilk from '../../assets/coffees/with-milk.png'
-import { ShoppingCart } from '@phosphor-icons/react'
 import { QuantityEntry } from '../quantity-entry'
 
 export function Products() {
@@ -38,7 +38,11 @@ export function Products() {
                   <span>{'R$ '}</span>
                   <strong>19,90</strong>
                 </PriceContainer>
-                <QuantityEntry />
+                <QuantityEntry
+                  currentValue={1}
+                  increaseAction={() => {}}
+                  decreaseAction={() => {}}
+                />
                 <RemoveButton>
                   <ShoppingCart width={22} weight="fill" />
                 </RemoveButton>
