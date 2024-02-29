@@ -76,7 +76,33 @@ export const CardTitle = styled.div`
 `
 
 export const AddresesFields = styled.div`
-  & > input {
+  & > div:has(input[name='complement']) {
+    width: calc(100% - 200px - 1rem);
+    position: relative;
+
+    & input {
+      width: 100%;
+
+      &:placeholder-shown + span {
+        display: block;
+        line-height: 1;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0.75rem;
+        font-style: italic;
+        font-size: ${(props) => props.theme.text.XS};
+        color: ${(props) => props.theme.baseLabel};
+      }
+
+      & + span,
+      &:focus + span {
+        display: none;
+      }
+    }
+  }
+
+  & input {
     border: 1px solid ${(props) => props.theme.baseButton};
     padding: 0.75rem;
     font-size: ${(props) => props.theme.text.S};
@@ -101,9 +127,6 @@ export const AddresesFields = styled.div`
     }
     &[name='number'] {
       width: 200px;
-    }
-    &[name='complement'] {
-      width: calc(100% - 200px - 1rem);
     }
 
     &[name='neighborhood'] {

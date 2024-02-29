@@ -38,7 +38,10 @@ export function Checkout() {
           <input name="cep" placeholder="CEP" />
           <input name="street" placeholder="Rua" />
           <input name="number" placeholder="Número" />
-          <input name="complement" placeholder="Complemento" />
+          <div>
+            <input name="complement" placeholder="Complemento" />
+            <span>Opcional</span>
+          </div>
           <input name="neighborhood" placeholder="Bairro" />
           <input name="city" placeholder="Cidade" />
           <input name="uf" placeholder="UF" />
