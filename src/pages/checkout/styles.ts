@@ -138,7 +138,13 @@ export const AddresesFields = styled.div`
     }
 
     &[name='uf'] {
+      text-transform: uppercase;
       width: 60px;
+    }
+
+    &::-webkit-calendar-picker-indicator,
+    &::-webkit-list-button {
+      display: none !important;
     }
   }
 `

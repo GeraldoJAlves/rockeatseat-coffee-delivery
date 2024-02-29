@@ -18,11 +18,11 @@ export function Header() {
         </LogoLink>
         <Location>
           <MapPinIcon weight="fill" />
-          Porto Alegre, RS
+          Belo Horizonte, MG
         </Location>
 
         <CheckoutLink to={'/checkout'}>
-          <span>3</span>
+          <span>2</span>
           <ShoppingCartIcon weight="fill" />
         </CheckoutLink>
       </Nav>

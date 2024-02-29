@@ -43,8 +43,14 @@ export function Checkout() {
             <span>Opcional</span>
           </div>
           <input name="neighborhood" placeholder="Bairro" />
-          <input name="city" placeholder="Cidade" />
-          <input name="uf" placeholder="UF" />
+          <input list="cities" name="city" placeholder="Cidade" />
+          <datalist id="cities">
+            <option value="Belo Horizonte" />
+          </datalist>
+          <input list="states" name="uf" placeholder="UF" maxLength={2} />
+          <datalist id="states">
+            <option value="MG" />
+          </datalist>
         </AddresesFields>
         <div>
           <CardTitle>
