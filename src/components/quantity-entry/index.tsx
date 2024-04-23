@@ -22,11 +22,11 @@ export function QuantityEntry({
 
   return (
     <QuantityEntryContainer>
-      <button onClick={increaseHandler}>
+      <button type="button" onClick={increaseHandler}>
         <Plus size={14} weight="bold" />
       </button>
       <span>{currentValue}</span>
-      <button onClick={decreaseHandler}>
+      <button type="button" onClick={decreaseHandler}>
         <Minus size={14} weight="bold" />
       </button>
     </QuantityEntryContainer>
